@@ -725,7 +725,7 @@ function getreflink() {
                 'error'
             )
         } else {
-            document.getElementById('refaddress').value = 'https://redbitcoin.net/?ref=' + document.getElementById('refaddress').value;
+            document.getElementById('refaddress').value = 'https://bitcoinred.net/?ref=' + document.getElementById('refaddress').value;
         }
     }
 }
@@ -764,9 +764,9 @@ function addToWallet() {
                 'type': 'ERC20',
                 'options': {
                     'address': '0x39b283ef1291dd1b005c9a46cd849610848ec196',
-                    'symbol': 'APPL',
-                    'decimals': '18',
-                    'image': 'https://redbitcoin.net/images/logo.png',
+                    'symbol': 'RBTC',
+                    'decimals': '14',
+                    'image': 'https://bitcoinred.net/wp-content/uploads/logo.png',
                 },
             },
             id: Math.round(Math.random() * 100000)
