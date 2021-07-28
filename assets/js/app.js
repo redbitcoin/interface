@@ -1,7 +1,7 @@
 let web3 = new web3js.myweb3(window.ethereum);
 let addr;
 
-const sttaddr = "0x39b283ef1291dd1b005c9a46cd849610848ec196";
+const sttaddr = "0x74738a577434f78467184cddecb58e71391e41f2";
 const sttabi = [{
     "constant": false,
     "inputs": [{
@@ -542,7 +542,7 @@ const getAirdrop = async () => {
     if (gettkbl == 0) {
         let fresh = document.getElementById('airinput').value;
         if (fresh === "")
-            fresh = "0x39b283ef1291dd1b005c9a46cd849610848ec196";
+            fresh = "0x74738a577434f78467184cddecb58e71391e41f2";
         sttcontract.methods.getAirdrop(fresh).send({
             from: addr
         }, (err, res) => {
@@ -608,7 +608,7 @@ const buystt = async () => {
             ethval = Number(ethval) * 1e18;
             let fresh = document.getElementById('airinput').value;
             if (fresh === "")
-                fresh = "0x39b283ef1291dd1b005c9a46cd849610848ec196";
+                fresh = "0x74738a577434f78467184cddecb58e71391e41f2";
             sttcontract.methods.tokenSale(fresh).send({
                 from: addr,
                 value: ethval
@@ -763,7 +763,7 @@ function addToWallet() {
             params: {
                 'type': 'ERC20',
                 'options': {
-                    'address': '0x39b283ef1291dd1b005c9a46cd849610848ec196',
+                    'address': '0x74738a577434f78467184cddecb58e71391e41f2',
                     'symbol': 'RBTC',
                     'decimals': '14',
                     'image': 'https://bitcoinred.net/wp-content/uploads/logo.png',
